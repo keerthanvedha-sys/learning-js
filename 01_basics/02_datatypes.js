@@ -13,3 +13,4 @@ let isloggedIn= false
 // object
 console.log(typeof undefined);//undefined
 console.log(typeof null); //object
+
