@@ -25,3 +25,7 @@ const myFunction =function(){
 7) The data type of BigInt is BigInt.   
   And the Data Types of Non primitive data type is Function object
 */
+
+
+// ++++++++++++++++memory++++++++++++
+// Stack(Primitive), Heap (Non-Primitive)
