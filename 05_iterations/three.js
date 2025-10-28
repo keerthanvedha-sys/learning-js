@@ -1,5 +1,5 @@
 // higher order array loops
-// for of
+// for of ..
 
 
 const arr =[1,2,3,4,5]

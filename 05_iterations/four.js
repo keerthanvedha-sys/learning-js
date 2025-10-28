@@ -1,4 +1,4 @@
-// for in loop
+// for in loop ...
 const myObject={
     js : 'javascript',
     cpp : 'c++',
