@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li>
+                <img width="200px" id="photoshop"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="photoshop" >
+            </li>
+              <li>
+                <img width="200px" id="ding"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="photoshop">
+            </li>
+              <li>
+                <img width="200px" id="owl"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="photoshop">
+            </li>
+              <li>
+                <img width="200px" id="bell"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="photoshop">
+            </li>
+            <li><a style ="color:orange;"href ="https://google.com" id ="google"><h1>Google</h1></a></li>
+            
+        </ul>
+    </div>
+</body>
+<script>
+    //type,timestamp,defaultPrevented
+    // target,toElement,srcElement,currentTarget
+    //clientX,clientY,screenX,screenY
+    //altkey, ctrlkey,shiftkey,keyCode
+    
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("click inside the ul")
+    // },false)
+
+    //  document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("owl click")
+    //     e.stopPropagation() // stops bubbling to upper element
+    // },false )//can give true where capturing happens insted of bubbling
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     console.log('google clicked')
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    // },false)
+
+    document.getElementById('images').addEventListener('click',function(e){
+           console.log(e.target.parentNode);
+           let removeIt =e.target.parentNode
+           if(e.target.tagName==='IMG'){
+           removeIt.remove() 
+           }
+         // removeIt.parentNode.removeChild(removeIt) another way
+    },false)
+
+    
+ </script>
+
+</html>
